@@ -208,3 +208,133 @@
     </body>
 </html>
 <hr> -->
+<!-- //페이지 테두리 간격 설정
+<html>
+    <head>
+        <style type = "text/css">
+            table.one {
+                border-collapse:separate;
+                width:400px;
+                border-spacing:10px;
+            }
+            table.two {
+                border-collapse:separate;
+                width:400px;
+                border-spacing:10px 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table class = "one" border="1">
+        <caption>테두리 간격이 있는 예시 1</caption>
+        <p style = "text-align: center;">
+        <tr><td>  <p style = "text-align: center;">
+         셀 A 축소 예시</p>
+         </td></tr>
+         <tr><td>  <p style = "text-align: center;">
+         셀 B 축소 예시</p>
+         </td></tr>
+        </table>
+        <br />
+
+        <table class = "one" border="1">
+            <caption>테두리 간격이 있는 예시 2</caption>
+            <tr><td> 셀 A 축소 예시</td></tr>
+            <tr><td> 셀 B 축소 예시</td></tr>
+            </table>
+    </body>
+</html>
+<hr> -->
+<!-- //캡션 설정
+<html>
+   <head>
+      <style type = "text/css">
+         caption.top {caption-side:top}
+         caption.bottom {caption-side:bottom}
+         caption.left {caption-side:left}
+         caption.right {caption-side:right}
+      </style>
+   </head>
+
+   <body>
+   
+      <table style = "width:400px; border:1px solid black;">
+         <caption class = "top">
+            상단 캡션
+         </caption>
+         <tr><td > Cell A</td></tr>
+         <tr><td > Cell B</td></tr>
+      </table>
+      <br />
+      
+      <table style = "width:400px; border:1px solid black;">
+         <caption class = "bottom">
+            하단 캡션
+         </caption>
+         <tr><td > Cell A</td></tr>
+         <tr><td > Cell B</td></tr>
+      </table>
+      <br />
+      
+      <table style = "width:400px; border:1px solid black;">
+         <caption class = "left">
+            왼쪽
+         </caption>
+         <tr><td > Cell A</td></tr>
+         <tr><td > Cell B</td></tr>
+      </table>
+      <br />
+      
+      <table style = "width:400px; border:1px solid black;">
+         <caption class = "right">
+            오른쪽
+         </caption>
+         <tr><td > Cell A</td></tr>
+         <tr><td > Cell B</td></tr>
+      </table>
+      
+   </body>
+</html>
+<hr>-->
+<!--  //빈 셀 설정
+<html>
+    <head>
+        <style type = "text/css">
+            table.empty {
+                width:350px;
+                border-collapse:separate;
+                empty-cells:hide;
+            }
+            table.empty {
+                padding:5px;
+                border-style:solid;
+                border-width:1px;
+                border-color:#999999;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <table class = "empty">
+            <tr>
+               <th></th>
+               <th>열 1</th>
+               <th>열 2</th>
+            </tr>
+         
+            <tr>
+               <th>행 1</th>
+               <td class = "empty">value</td>
+               <td class = "empty">value</td>
+            </tr>
+         
+            <tr>
+               <th>행 2</th>
+               <td class = "empty">value</td>
+               <td class = "empty"></td>
+            </tr>
+         </table>
+    </body>
+</html>-->
