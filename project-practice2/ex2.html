@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <title>
+            profile
+        </title>
+         <h3>프로필</H3>
+        <p style = "text-align: center;">
+         실명 : 
+         <input type="text" name="이름"><br>
+         학번 : 
+         <input type="number" name="학번"><br>
+         Email : 
+         <input type="email" name="학교 메일"><br>
+         내 소개:
+         <input type="text" name="내 소개"><br>
+         <form action = "https://localhost/upload.php" method="post" entype="multipart/form-data">
+            <input type = "file" name="profile">
+            <input type="submit">
+         </form>
+         </p>
+    </body>
+</html>
